@@ -16,7 +16,7 @@ build:
     - mvn clean install -DskipTests
     - mvn sonar:sonar
     - ls -l target/
-    - docker build -t ms_eureka .
+    - docker build -t dockerregistry.hclets.com/ms_eureka:latest .
   
   post_ci:
     - ls -a
