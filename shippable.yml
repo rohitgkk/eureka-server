@@ -15,7 +15,7 @@ build:
     - mvn --version
     - mvn clean install -DskipTests
     - docker build -t ms_eureka .
-
+  
   post_ci:
     - ls -a
     - pwd
