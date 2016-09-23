@@ -1,0 +1,22 @@
+# Language setting
+language: java
+
+# Version number
+jdk:
+  - oraclejdk8
+
+build:
+
+  pre_ci:
+    - echo "this is master branch"
+
+  ci:
+    - java -version
+    - mvn --version
+
+  post_ci:
+    - ls -a
+    - pwd
+
+  cache: true
+
