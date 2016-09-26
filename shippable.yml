@@ -10,10 +10,10 @@ build:
   ci:
     - mvn clean install -DskipTests
     - mvn sonar:sonar
-    - docker build -t dockerregistry.hclets.com/ms_eureka:latest .
+    - docker build -t hrishi/ms_eureka:latest .
 
   post_ci:
-    - docker push dockerregistry.hclets.com/ms_eureka:latest
+    - docker push hrishi/ms_eureka:latest
 
 integrations:
   hub:
